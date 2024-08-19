@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(85, 170, 41);
+}
+.panel-top{
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: green;
+    
+}
+.elem{
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-size: small;
+}
+.box{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 540;
+    padding: 0px 12px;
+    background-color: white;
+}
+.panel-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: calc(100% - 65px);
+    width: 100%;
+    padding: 10px;
+    color: black;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(212, 212, 222);
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+@media(max-width:768px){
+    .panel-top{
+        padding: 0 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 55px;
+        background-color: green;  
+    }
+    .bubble{
+        height: 55px;
+        width: 55px;
+        margin-left: 1px;
+    }
+}
